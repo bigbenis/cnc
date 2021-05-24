@@ -1,0 +1,565 @@
+;%_huy
+;$PATH=/_huy PROGRAM _WPD
+;---------- PROGRAM Ihuy ---------- 
+; -- PROGRAM
+; -- ESPRIT-Thuy BUILD: 20.401.2.16492
+; -- MACHIhuy huy    : DMGMORI_ECOMILL50
+; -- MACHIhuy REVISIOhuy V3.707
+; -- POST PROCESSOR  : DMGMORI_S840D_V3.751
+; -- 09.03.2021 15:19:05
+;---------- TOOL DEFIhuy -------
+; -- T3  - DRILL 14
+; -- T3  - Ehuy
+; -- T3  - Ehuy
+; -- T4  - EM12
+; -- T4  - EM10
+; -- T5  - EM6
+; -- T5  - DRILL 1.85
+; -- T5  - DRILL 16
+; -- T5  - DRILL 3.8
+; -- T6  - DRILL 4.3
+; -- T7  - DRILL 2.5 LOhuy
+; -- T9  - CEhuy
+; -- T14  - TAPPIhuy MILL
+; -- T15  - DRILL 5
+;-------------------------------------
+huy WORKPIECE(,,,"CYLIhuy
+huy G40 G17 G71 G90
+huy G64
+huy CYCLE800( )
+huy TRAFOOF
+huy ; ----------
+huy ; EM12
+huy T="EM12"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+huy ; -- KEK-MAKEK
+huy G94 S1035 M3
+huy M08
+huy D1
+huy G0 B0. C=DC(0.)
+huy X0. Y0.
+huy Z2.
+huy G1 Z-6. F31
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-9.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-12.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-15.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-18.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-21.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-24.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-27.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-30.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-33.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-36.
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy Z-36.5
+huy Y10. F311
+huy Y0.
+huy Z2. F31
+huy G0 Z10.
+ 
+huy ; -- D48_MILLIhuy
+huy S1326
+huy R1 Brake R2 Brake
+huy G0 Z7.
+huy G1 Z-3. F663
+huy G1 G42 Y19.
+huy G3 X0. Y-3.5 I0 J-11.25
+huy G3 X0. Y28. I0 J15.75
+huy G3 X0. Y28. I0 J-18.
+huy G0 Z7.
+huy G1 G40 Y0.
+huy G0 Z10.
+ 
+huy ; -- D44.3_MILLIhuy
+huy G0 Z7.
+huy G1 Z-8. F663
+huy G1 G42 X1.199 Y26.105
+huy G3 X0. Y26.15 I-1.199 J-16.105
+huy G3 X0. Y26.15 I0 J-16.15
+huy G3 X-1.199 Y26.105 I0 J-16.15
+huy G0 Z2.
+huy G1 G40 X0. Y0.
+huy G0 Z10.
+ 
+huy ; -- M42(D40.5)_POCKET
+huy S1671
+huy M23 M11
+huy G0 Z-7.65
+huy G1 Z-14.65 F83
+huy Y12. F833
+huy G3 X0. Y12. I0 J-2.
+huy G3 X0. Y2. I0 J-5.
+huy G3 X0. Y24. I0 J11.
+huy G3 X0. Y24. I0 J-14.
+huy G1 Y14.
+huy Z-12.65 F83
+huy G0 Z-7.65
+huy Y0.
+huy Z-12.65
+huy G1 Z-19.65
+huy Y12. F833
+huy G3 X0. Y12. I0 J-2.
+huy G3 X0. Y2. I0 J-5.
+huy G3 X0. Y24. I0 J11.
+huy G3 X0. Y24. I0 J-14.
+huy G1 Y14.
+huy Z-17.65 F83
+huy G0 Z-7.65
+huy Y0.
+huy Z-17.65
+huy G1 Z-24.65
+huy Y12. F833
+huy G3 X0. Y12. I0 J-2.
+huy G3 X0. Y2. I0 J-5.
+huy G3 X0. Y24. I0 J11.
+huy G3 X0. Y24. I0 J-14.
+huy G1 Y14.
+huy Z-22.65 F83
+huy G0 Z-7.65
+huy Y0.
+huy Z-22.65
+huy G1 Z-29.65
+huy Y12. F833
+huy G3 X0. Y12. I0 J-2.
+huy G3 X0. Y2. I0 J-5.
+huy G3 X0. Y24. I0 J11.
+huy G3 X0. Y24. I0 J-14.
+huy G1 Y14.
+huy Z-27.65 F83
+huy G0 Z-7.65
+huy Y0.
+huy Z-27.65
+huy G1 Z-34.65
+huy Y12. F833
+huy G3 X0. Y12. I0 J-2.
+huy G3 X0. Y2. I0 J-5.
+huy G3 X0. Y24. I0 J11.
+huy G3 X0. Y24. I0 J-14.
+huy G1 Y14.
+huy Z-32.65 F83
+huy G0 Z-7.65
+huy Y0.
+huy Z-32.65
+huy G1 Z-36.
+huy Y12. F833
+huy G3 X0. Y12. I0 J-2.
+huy G3 X0. Y2. I0 J-5.
+huy G3 X0. Y24. I0 J11.
+huy G3 X0. Y24. I0 J-14.
+huy G1 Y14.
+huy Z-34. F83
+huy M09
+
+
+huy D1
+huy M5
+ 
+
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+huy ; -- SLOT 15X6 L
+huy G94 S204 M3
+huy M08
+huy D1
+huy G0 B0. C=DC(0.)
+huy X0. Y10.
+huy Z-10.
+huy Z-11.5
+huy G1 Z-29. F31
+huy Y21.25 F61
+huy G3 X0. Y21.25 I0 J-11.25
+huy G1 Y16.25
+huy Z-19. F31
+huy G0 Z-10.
+huy Y10.
+huy Z-19.
+huy G1 Z-36.5
+huy Y21.25 F61
+huy G3 X0. Y21.25 I0 J-11.25
+huy G1 Y16.25
+huy Z-26.5 F31
+huy G0 Z-10.
+huy M09
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; EM10
+huy T="EM10"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+huy ; -- R6_MILLIhuy
+huy G94 S1000 M3
+huy M08
+huy D1
+huy G0 B0. C=DC(0.)
+huy X11.835 Y-3.25
+huy Z10.
+huy G1 Z-1.5 F1000
+huy X22.627 Y-14.042
+huy G3 X24.042 Y-12.627 I.708 J.707
+huy G1 X13.25 Y-1.835
+huy Z8.5
+huy G0 Z10.
+ 
+
+huy S3597
+huy G0 X23.335 Y-13.335
+huy Z2.
+huy G1 Z-2. F240
+huy X22.627 Y-14.042 F600
+huy G3 X22.627 Y-14.042 I.708 J.707
+huy G1 Z0. F240
+huy G0 X23.335 Y-13.335
+huy G1 Z-4.
+huy X22.627 Y-14.042 F600
+huy G3 X22.627 Y-14.042 I.708 J.707
+huy G1 Z-2. F240
+huy G0 X23.335 Y-13.335
+huy G1 Z-6.
+huy X22.627 Y-14.042 F600
+huy G3 X22.627 Y-14.042 I.708 J.707
+huy G1 Z2. F240
+huy M09
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; EM6
+huy T="EM6"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+huy ; -- POCKET R7
+huy G94 S1000 M3
+huy M08
+huy D1
+huy G0 B0. C=DC(0.)
+huy X.5 Y-44.847
+huy Z2.
+huy G1 Z0. F100
+huy Y-39.847
+huy Y-34.5
+huy G3 X0. Y-34. I-.5 J0
+huy G3 X-.5 Y-34.5 I0 J-.5
+huy G1 Y-39.847
+huy Y-44.847
+huy Z2.
+huy M09
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; DRILL 4.3
+huy T="DRILL 4.3"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+huy ; -- HOLE 4.3 (Ghuy
+huy G94 S500 M3
+huy M08
+huy D1
+huy G0 B0. C=DC(0.)
+huy X0. Y-23.
+huy Z2.
+huy F33
+huy MCALL CYCLE83(2.,0,2.,-10.,,-1.,,0,1.,1.,.75,1,3,,,0,1.)
+huy G0 X0. Y-23.
+huy MCALL
+huy M09
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; EM12
+huy T="EM12"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+
+huy G94 S3000 M3
+huy M08
+huy D1
+huy ; -- (B=90. C=0 )
+huy CYCLE800(0,"DMG",200000,27,0,0,0,0,90.,0,0,0,0,1,,1)
+huy G0 X44. Y30.965
+huy Z42.
+huy G1 Z39. F200
+huy Y25.965 F500
+huy Y-25.965
+huy X35.6
+huy Y25.965
+huy X27.5
+huy X27.2
+huy Y-25.965
+huy X18.8
+huy Y25.965
+huy X10.4
+huy Y-25.965
+huy X5.
+huy G2 X2. Y-25.244 I0 J6.6
+huy G1 Y25.244
+huy G3 X-.94 Y22.243 I3. J-5.879
+huy G3 X-1.675 Y20.678 I66.895 J-32.412
+huy G3 X-2.65 Y18.439 I61.545 J-28.117
+huy G3 X-3.55 Y16.139 I56.545 J-23.449
+huy G3 X-4.362 Y13.775 I52.279 J-19.287
+huy G3 X-4.977 Y11.699 I49.138 J-15.69
+huy G3 X-5.587 Y9.22 I46.317 J-12.705
+huy G3 X-6.065 Y6.684 I44.166 J-9.647
+huy G3 X-6.4 Y4.082 I42.443 J-6.781
+huy G1 Y-4.082
+huy G2 X-6.585 Y-1.128 I42.126 J4.116
+huy G1 Y-1.125
+huy G2 X-6.6 Y-.028 I41.628 J1.126
+huy G1 Y.029
+huy Z41. F200
+huy G0 X44. Y30.965
+huy G1 Z38.
+huy Y25.965 F500
+huy Y-25.965
+huy X35.6
+huy Y25.965
+huy X27.5
+huy X27.2
+huy Y-25.965
+huy X18.8
+huy Y25.965
+huy X10.4
+huy Y-25.965
+huy X5.
+huy G2 X2. Y-25.244 I0 J6.6
+huy G1 Y25.244
+huy G3 X-.94 Y22.243 I3. J-5.879
+huy G3 X-1.675 Y20.678 I66.895 J-32.412
+huy G3 X-2.65 Y18.439 I61.545 J-28.117
+huy G3 X-3.55 Y16.139 I56.545 J-23.449
+huy G3 X-4.362 Y13.775 I52.279 J-19.287
+huy G3 X-4.977 Y11.699 I49.138 J-15.69
+huy G3 X-5.587 Y9.22 I46.317 J-12.705
+huy G3 X-6.065 Y6.684 I44.166 J-9.647
+huy G3 X-6.4 Y4.082 I42.443 J-6.781
+huy G1 Y-4.082
+huy G2 X-6.585 Y-1.128 I42.126 J4.116
+huy G1 Y-1.125
+huy G2 X-6.6 Y-.028 I41.628 J1.126
+huy G1 Y.029
+huy Z40. F200
+huy G0 X44. Y30.965
+huy G1 Z37.
+huy Y25.965 F500
+huy Y-25.965
+huy X35.6
+huy Y25.965
+huy X27.5
+huy X27.2
+huy Y-25.965
+huy X18.8
+huy Y25.965
+huy X10.4
+huy Y-25.965
+huy X5.
+huy G2 X2. Y-25.244 I0 J6.6
+huy G1 Y25.244
+huy G3 X-.94 Y22.243 I3. J-5.879
+huy G3 X-1.675 Y20.678 I66.895 J-32.412
+huy G3 X-2.65 Y18.439 I61.545 J-28.117
+huy G3 X-3.55 Y16.139 I56.545 J-23.449
+huy G3 X-4.362 Y13.775 I52.279 J-19.287
+huy G3 X-4.977 Y11.699 I49.138 J-15.69
+huy G3 X-5.587 Y9.22 I46.317 J-12.705
+huy G3 X-6.065 Y6.684 I44.166 J-9.647
+huy G3 X-6.4 Y4.082 I42.443 J-6.781
+huy G1 Y-4.082
+huy G2 X-6.585 Y-1.128 I42.126 J4.116
+huy G1 Y-1.125
+huy G2 X-6.6 Y-.028 I41.628 J1.126
+huy G1 Y.029
+huy Z39. F200
+huy G0 X44. Y30.965
+huy G1 Z36.
+huy Y25.965 F500
+huy Y-25.965
+huy X35.6
+huy Y25.965
+huy X27.5
+huy X27.2
+huy Y-25.965
+huy X18.8
+huy Y25.965
+huy X10.4
+huy Y-25.965
+huy X5.
+huy G2 X2. Y-25.244 I0 J6.6
+huy G1 Y25.244
+huy G3 X-.94 Y22.243 I3. J-5.879
+huy G3 X-1.675 Y20.678 I66.895 J-32.412
+huy G3 X-2.65 Y18.439 I61.545 J-28.117
+huy G3 X-3.55 Y16.139 I56.545 J-23.449
+huy G3 X-4.362 Y13.775 I52.279 J-19.287
+huy G3 X-4.977 Y11.699 I49.138 J-15.69
+huy G3 X-5.587 Y9.22 I46.317 J-12.705
+huy G3 X-6.065 Y6.684 I44.166 J-9.647
+huy G3 X-6.4 Y4.082 I42.443 J-6.781
+huy G1 Y-4.082
+huy G2 X-6.585 Y-1.128 I42.126 J4.116
+huy G1 Y-1.125
+huy G2 X-6.6 Y-.028 I41.628 J1.126
+huy G1 Y.029
+huy Z38. F200
+huy G0 X44. Y30.965
+huy G1 Z35.
+huy Y25.965 F500
+huy Y-25.965
+huy X35.6
+huy Y25.965
+huy X27.5
+huy X27.2
+huy Y-25.965
+huy X18.8
+huy Y25.965
+huy X10.4
+huy Y-25.965
+huy X5.
+huy G2 X2. Y-25.244 I0 J6.6
+huy G1 Y25.244
+huy G3 X-.94 Y22.243 I3. J-5.879
+huy G3 X-1.675 Y20.678 I66.895 J-32.412
+huy G3 X-2.65 Y18.439 I61.545 J-28.117
+huy G3 X-3.55 Y16.139 I56.545 J-23.449
+huy G3 X-4.362 Y13.775 I52.279 J-19.287
+huy G3 X-4.977 Y11.699 I49.138 J-15.69
+huy G3 X-5.587 Y9.22 I46.317 J-12.705
+huy G3 X-6.065 Y6.684 I44.166 J-9.647
+huy G3 X-6.4 Y4.082 I42.443 J-6.781
+huy G1 Y-4.082
+huy G2 X-6.585 Y-1.128 I42.126 J4.116
+huy G1 Y-1.125
+huy G2 X-6.6 Y-.028 I41.628 J1.126
+huy G1 Y.029
+huy Z37. F200
+huy G0 Z42.
+huy M09
+huy CYCLE800()
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; CEhuy
+huy T="CEhuy
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+
+huy G94 S2500 M3
+huy M08
+huy D1
+huy ; -- (B=90. C=0 )
+huy CYCLE800(0,"DMG",200000,27,0,0,0,0,90.,0,0,0,0,1,,1)
+huy G0 X27. Y0.
+huy Z37.
+huy F250
+huy MCALL CYCLE81(37.,35.,2.,34.,)
+huy G0 X27. Y0.
+huy MCALL
+huy M09
+huy CYCLE800()
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; DRILL 14
+huy T="DRILL 14"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+ 
+huy ; -- DRILLIhuy ??20 (D18.5)
+huy G94 S455 M3
+huy M08
+huy D1
+huy G0 B90. C=DC(0.)
+huy X-166. Y0.
+huy Z-156.
+huy F150
+huy MCALL CYCLE81(-156.,-158.,2.,-193.,)
+huy G0 X-166. Y0.
+huy MCALL
+huy M09
+
+
+huy D1
+huy M5
+ 
+huy ; ----------
+huy ; EM12
+huy T="EM12"
+huy M6
+
+huy ; --- Work Offset: G54
+huy G54
+
+huy M30
+ 
