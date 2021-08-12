@@ -20,7 +20,7 @@ if typeWpc == '"CYLINDER"':
     # диаметр заготовки
     diam = x[8][0:-1]
     
-    stringWPC = 'N5 G17\nN10 WORKPIECE(,"",,' + typeWpc + ',64,0,-' + height +',' + diam + '.' + diam +')'
+    stringWPC = 'N5 G17\nN10 WORKPIECE(,"",,' + typeWpc + ',64,0,-' + height +',' + diam + ',' + diam +')'
     
     f = open('wpc.txt', 'r')
     yoba = f.readlines()
