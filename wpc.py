@@ -38,7 +38,7 @@ elif typeWpc == '"BOX"':
     yoba = f.readlines()
     f = open('wpc.txt', 'w')
     for line in yoba:
-        if 'SUPA' not in line:
+        if 'WORKPIECE' in line:
             f.write(re.sub(r'N10\s\S+', stringWPC, line))
     f.close()
     
