@@ -30,7 +30,7 @@ with open (glob.glob('*.MPF')[0], 'w') as f:
 					diam = diam
 
 				wpcNew = 'N5 G17\nN10 WORKPIECE(,"",,' + typeWpc + ',64,0,-' + height +',' + diam + ')\n'
-				w = wpc.replace(wpc,wpcNew) # берем строку заготовки и заменяем ее на другую строку (y)
+				
 				f.write(wpcNew)
 
 		elif 'SUPA' not in line:
